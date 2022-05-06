@@ -32,3 +32,13 @@ exports.showProducts = (req,res) => {
         res.status(400).send(err)
     })
 }
+
+exports.getCategoryItems = (req,res) => {
+    ProductsModel.findById(req.params.id)
+    .then(result => {
+        res.send(result)
+    })
+    .catch(err => {
+        res.send(err)
+    })
+}

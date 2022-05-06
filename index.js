@@ -17,7 +17,7 @@ app.use(cors())
 
 
 
-const url = "mongodb+srv://sachin:12345.ct1jy.mongodb.net/Kellton-Ecommerce?retryWrites=true&w=majority"
+const url = "mongodb+srv://arjunuvlad:12345@hitman24.ct1jy.mongodb.net/Kellton-Ecommerce?retryWrites=true&w=majority"
 
 mongoose.connect(url,{useNewUrlParser:true})
 .then(() => {
